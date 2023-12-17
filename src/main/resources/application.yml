@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+#      ddl-auto: create
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    password: Z38pAc8qct
+    url: "jdbc:mysql://sql12.freesqldatabase.com:3306/sql12670981"
+    username: sql12670981
+    hikari:
+      maxLifetime: 20000
+
+
