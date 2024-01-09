@@ -4,7 +4,7 @@ import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.dv.data.Data;
-import org.dv.service.DvService;
+import org.dv.service.BookService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class DvController {
 
-  private final DvService dvService;
+  private final BookService bookService;
   @GetMapping
   public List<Data> getEngagements() {
-    return dvService.getData();
+    return bookService.getData();
   }
 }
